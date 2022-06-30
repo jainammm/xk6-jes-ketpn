@@ -1,0 +1,12 @@
+apiVersion: v2
+actions:
+  - name: "Run k6"
+    events:
+      - name: "sh.keptn.event.test.triggered"
+    tasks:
+      - name: "Build and run K6 extension using Keptn"
+        files:
+          - /files
+        image: "golang"
+        cmd: ["sh"]
+        args: ["/keptn/files/execution.sh" ]
