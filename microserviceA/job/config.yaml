@@ -11,4 +11,4 @@ actions:
         # cmd: ["sh"]
         # args: ["/keptn/files/execution.sh", "&&", "ls" ]
         cmd: ["ls"]
-        args: ["&&", "k6", "run", "--duration", "30s", "--vus", "10", "/keptn/files/k6_test.js"]
+        args: ["/keptn/files/", "&&", "k6", "run", "--duration", "30s", "--vus", "10", "/keptn/files/k6_test.js"]
