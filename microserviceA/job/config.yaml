@@ -8,7 +8,7 @@ actions:
         files:
           - /files
         image: "loadimpact/k6"
-        # cmd: ["sh"]
-        # args: ["/keptn/files/execution.sh", "&&", "ls" ]
-        cmd: ["k6"]
-        args: ["run", "--duration", "30s", "--vus", "10", "/keptn/files/k6_test.js", "&&", "ls"]
+        cmd: ["sh"]
+        args: ["/keptn/files/execution.sh", "&&", "ls" ]
+        cmd: ["ls"]
+        args: ["&&", "k6", "run", "--duration", "30s", "--vus", "10", "/keptn/files/k6_test.js"]
