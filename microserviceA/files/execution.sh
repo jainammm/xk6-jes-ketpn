@@ -7,9 +7,10 @@ export GOPATH=/keptn/go
 mkdir $GOPATH
 echo "exported GOPATH to $GOPATH"
 
-echo "turning GOCACHE off"
-export GOCACHE=off
-
+echo "exporting GOCACHE"
+export GOCACHE=/keptn/go/cache
+mkdir $GOCACHE
+echo "exported GOCACHE to $GOCACHE"
 
 echo "exporting TMPDIR"
 export TMPDIR=/keptn/tmp
