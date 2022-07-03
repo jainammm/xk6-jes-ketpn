@@ -8,7 +8,7 @@ mkdir $GOPATH
 echo "exported GOPATH to $GOPATH"
 
 echo "exporting GOCACHE"
-export GOCACHE=/keptn/cache
+export GOCACHE=off
 # mkdir $GOCACHE
 echo "exported GOCACHE to $GOCACHE"
 
@@ -19,6 +19,7 @@ echo "exported TMPDIR to $TMPDIR"
 
 echo "installing xk6"
 go install go.k6.io/xk6/cmd/xk6@latest
+ls -al $GOPATH/bin
 echo "installed xk6"
 
 echo "building k6 binary with the Prometheus remote write"
