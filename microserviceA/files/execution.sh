@@ -22,7 +22,7 @@ ls -al /keptn
 
 echo "*****************"
 
-cd keptn
+cd /keptn
 
 mkdir foo
 
