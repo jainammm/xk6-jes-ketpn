@@ -6,8 +6,12 @@ echo exporting GOPATH
 export GOPATH=/keptn
 echo exported GOPATH to $GOPATH 
 
+echo exporting TMPDIR
+export TMPDIR=/keptn/tmp
+echo exported TMPDIR to $TMPDIR 
+
 echo installing xk6
-sudo go install go.k6.io/xk6/cmd/xk6@latest
+go install go.k6.io/xk6/cmd/xk6@latest
 echo installed xk6
 
 echo building k6 binary with the Prometheus remote write
