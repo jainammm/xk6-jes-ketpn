@@ -9,7 +9,7 @@ echo "exported GOPATH to $GOPATH"
 
 echo "exporting GOCACHE"
 export GOCACHE=/keptn/go_cache
-mkdir $GOCACHE
+# mkdir $GOCACHE
 echo "exported GOCACHE to $GOCACHE"
 
 echo "exporting TMPDIR"
