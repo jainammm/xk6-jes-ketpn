@@ -3,11 +3,13 @@ cd /keptn
 echo entered /keptn directory
 
 echo exporting GOPATH
-export GOPATH=/keptn
+export GOPATH=/keptn/go
+mkdir $GOPATH
 echo exported GOPATH to $GOPATH 
 
 echo exporting TMPDIR
 export TMPDIR=/keptn/tmp
+mkdir $TMPDIR
 echo exported TMPDIR to $TMPDIR 
 
 echo installing xk6
