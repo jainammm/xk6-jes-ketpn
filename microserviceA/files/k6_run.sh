@@ -11,4 +11,8 @@
 # k6 run -<$SCRIPT_NAME --tag testid=$TAG_NAME
 echo "running from the shell script"
 
+export K6_PROMETHEUS_REMOTE_URL=http://localhost:9090/api/v1/write
+
+export K6_OUT=output-prometheus-remote
+
 k6 run --vus 10 --duration 30s /keptn/files/k6_test.js
