@@ -11,7 +11,7 @@
 # k6 run -<$SCRIPT_NAME --tag testid=$TAG_NAME
 echo "running from the shell script"
 
-export K6_PROMETHEUS_REMOTE_URL=http://10.43.225.233:9090/api/v1/write
+export K6_PROMETHEUS_REMOTE_URL=http://default.prometheus-server:9090/api/v1/write
 
 export K6_OUT=output-prometheus-remote
 
