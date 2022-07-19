@@ -9,4 +9,6 @@
 # TAG_NAME="$(basename -s .js $SCRIPT_NAME)-$(date +%s)"
 
 # k6 run -<$SCRIPT_NAME --tag testid=$TAG_NAME
+echo "running from the shell script"
+
 k6 run --vus 10 --duration 30s /keptn/files/k6_test.js
