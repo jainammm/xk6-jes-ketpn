@@ -17,4 +17,4 @@ export K6_PROMETHEUS_REMOTE_URL=http://prometheus-server.default/api/v1/write
 
 export K6_OUT=output-prometheus-remote
 
-k6 run --vus 10 --duration 180s /keptn/files/k6_test.js
+k6 run --vus 10 --duration 30s /keptn/files/k6_test.js
