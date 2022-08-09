@@ -20,6 +20,5 @@ actions:
           - "-o"
           - "output-prometheus-remote"
         env:
-          - name: K6_PROMETHEUS_REMOTE_URL
-            valueFrom: string
-            value: http://prometheus-server.default/api/v1/write
+          - name: k6-details
+            valueFrom: secret
