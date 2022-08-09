@@ -8,5 +8,18 @@ actions:
         files:
           - /files
         image: "jvenom/k6-prometheus"
-        cmd: ["sh"]
-        args: ["/keptn/files/k6_run.sh"]
+        cmd:
+          - "k6"
+        args:
+          - "run"
+          - "--vus"
+          - "10" 
+          - "--duration"
+          - "30s"
+          - "/keptn/files/k6_test.js"
+          - "-o"
+          - "output-prometheus-remote"
+        env:
+          - name: K6_PROMETHEUS_REMOTE_URL
+            valueFrom: string
+            value: http://prometheus-server.default/api/v1/write
